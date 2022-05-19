@@ -8,7 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-    
+    let titleLabel = UILabel()
     let loginView = LoginView()
     let signinButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
@@ -32,6 +32,11 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController {
     private func style() {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.textAlignment = .center
+        titleLabel.numberOfLines = 0
+        titleLabel.text = "Bankey"
+        
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
         signinButton.translatesAutoresizingMaskIntoConstraints = false
@@ -48,9 +53,16 @@ extension LoginViewController {
     }
     
     private func layout() {
+        view.addSubview(titleLabel)
         view.addSubview(loginView)
         view.addSubview(signinButton)
         view.addSubview(errorMessageLabel)
+        
+        // titleLabel
+        NSLayoutConstraint.activate([
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            titleLabel.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 20)
+        ])
         
         // LoginView
         NSLayoutConstraint.activate([
@@ -84,6 +96,7 @@ extension LoginViewController {
     }
     
     private func login() {
+        
         guard let username = username, let password = password else {
             assertionFailure("Username / password should never be nil")
             return
