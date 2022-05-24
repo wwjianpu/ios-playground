@@ -58,10 +58,10 @@
 		ECBBE4182833D2820088C5FE /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				ECBBE4192833D2820088C5FE /* AppDelegate.swift */,
 				ECCFDE5528368F7C0070FEE6 /* Onboarding */,
 				ECBBE42E2833D7620088C5FE /* Login */,
 				ECBBE42D2833D7210088C5FE /* Files */,
-				ECBBE4192833D2820088C5FE /* AppDelegate.swift */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
