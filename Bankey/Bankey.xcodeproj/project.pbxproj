@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC554F09283FD028001172A9 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC554F08283FD028001172A9 /* DummyViewController.swift */; };
+		EC554F0C283FD7E6001172A9 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC554F0B283FD7E6001172A9 /* LocalState.swift */; };
 		ECBBE41A2833D2820088C5FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBBE4192833D2820088C5FE /* AppDelegate.swift */; };
 		ECBBE41E2833D2820088C5FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBBE41D2833D2820088C5FE /* LoginViewController.swift */; };
 		ECBBE4232833D2840088C5FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBBE4222833D2840088C5FE /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC554F08283FD028001172A9 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		EC554F0B283FD7E6001172A9 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		ECBBE4162833D2820088C5FE /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBBE4192833D2820088C5FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBBE41D2833D2820088C5FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -39,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC554F0A283FD7D9001172A9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC554F0B283FD7E6001172A9 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		ECBBE40D2833D2820088C5FE = {
 			isa = PBXGroup;
 			children = (
+				EC554F0A283FD7D9001172A9 /* Utils */,
 				ECBBE4182833D2820088C5FE /* Bankey */,
 				ECBBE4172833D2820088C5FE /* Products */,
 			);
@@ -81,6 +94,7 @@
 			children = (
 				ECBBE41D2833D2820088C5FE /* LoginViewController.swift */,
 				ECBBE42F2833D7840088C5FE /* LoginView.swift */,
+				EC554F08283FD028001172A9 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -165,6 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBBE4302833D7840088C5FE /* LoginView.swift in Sources */,
+				EC554F0C283FD7E6001172A9 /* LocalState.swift in Sources */,
+				EC554F09283FD028001172A9 /* DummyViewController.swift in Sources */,
 				ECBBE41E2833D2820088C5FE /* LoginViewController.swift in Sources */,
 				ECCFDE592836964D0070FEE6 /* OnboardingViewController.swift in Sources */,
 				ECBBE41A2833D2820088C5FE /* AppDelegate.swift in Sources */,
